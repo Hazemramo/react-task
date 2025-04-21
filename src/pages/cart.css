@@ -1,0 +1,177 @@
+  .productbox-cart .imgbox {
+    position: relative;
+  }
+
+  .productbox-cart .cross {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    opacity: 0.5;
+
+
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+
+  .productbox-cart .emptycart {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .productbox-cart .emptybtn {
+    font-size: 25px;
+    background: rgb(90, 90, 90);
+    color: white;
+    padding: 5px 15px;
+    margin-top: 20px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+
+  .productbox-cart .total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  /* product show */
+
+
+
+
+
+  .products-cart .content {
+
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+      color: blue;
+    }
+  }
+
+
+
+  .products-cart .content {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  .products-cart .content .box {
+    margin: 20px;
+    width: 70%;
+    height: 250px;
+    display: flex;
+    position: relative;
+
+
+  }
+
+
+
+  .products-cart .content .img-box {
+    position: relative;
+    background-color: var(---sec-black-color);
+    padding: 50px;
+    height: 250px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .products-cart .content .details-box {
+    width: 70%;
+    background-color: #d9d9d9;
+    padding: 20px;
+
+    h3 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: #2c2c2c;
+    }
+  }
+
+  .products-cart .content .details-box .qty {
+    display: flex;
+    align-items: center;
+
+  }
+
+
+  .products-cart .content .details-box button {
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 10px;
+    height: 30px;
+    font-size: 2rem;
+    margin: 20px 0;
+    border: none;
+    background: none;
+    color: rgb(55, 0, 255);
+    font-weight: 100;
+    cursor: pointer;
+
+
+
+  }
+
+  .products-cart .content .details-box input {
+    padding: 0 5px;
+    width: 50px;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    text-align: center;
+
+
+
+
+  }
+
+  .products-cart .content .details-box .incqty {}
+
+
+
+  .products-cart .details-box .subtotal {
+    color: #2c2c2c5e;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+
+
+
+
+
+
+  /* total nums */
+  .total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+  }
