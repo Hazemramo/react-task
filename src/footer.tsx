@@ -1,8 +1,4 @@
-import React from 'react'
-
-import { Link } from 'react-router-dom';
 import './footer.css'
-
 
 export const Footer = () => {
     return (
@@ -27,38 +23,38 @@ export const Footer = () => {
                         <div className='list' >
                             <h2>Get to Know Us</h2>
                             <ul>
-                                <Link>About Amazon</Link>
-                                <Link>Careers</Link>
-                                <Link>Amazon Science</Link>
+                                <a>About Amazon</a>
+                                <a>Careers</a>
+                                <a>Amazon Science</a>
                             </ul>
                         </div>
                         <div className='list' >
                             <h2>Shop with Us</h2>
                             <ul>
-                                <Link>Your Account</Link>
-                                <Link>Your Addresses</Link>
-                                <Link>Your Orders</Link>
-                                <Link>Your Lists</Link>
+                                <a>Your Account</a>
+                                <a>Your Addresses</a>
+                                <a>Your Orders</a>
+                                <a>Your Lists</a>
                             </ul>
                         </div>
                         <div className='list' >
                             <h2>Make Money with Us</h2>
                             <ul>
-                                <Link>Protect and build your brand</Link>
-                                <Link>Advertise Your Products</Link>
-                                <Link>Sell on Amazon</Link>
-                                <Link>Fulfillment by Amazon</Link>
-                                <Link>Supply to Amazon</Link>
+                                <a>Protect and build your brand</a>
+                                <a>Advertise Your Products</a>
+                                <a>Sell on Amazon</a>
+                                <a>Fulfillment by Amazon</a>
+                                <a>Supply to Amazon</a>
                             </ul>
                         </div>
                         <div className='list' >
                             <h2>Let Us Help You</h2>
                             <ul>
-                                <Link>Help</Link>
-                                <Link>Shipping & Delivery</Link>
-                                <Link>Returns & Replacements</Link>
-                                <Link>Recalls and Product Safety Alerts</Link>
-                                <Link>Amazon App Download</Link>
+                                <a>Help</a>
+                                <a>Shipping & Delivery</a>
+                                <a>Returns & Replacements</a>
+                                <a>Recalls and Product Safety Alerts</a>
+                                <a>Amazon App Download</a>
                             </ul>
                         </div>
                     </div>
@@ -98,41 +94,41 @@ export const Footer = () => {
                     <div className="footer-last">
 
                         <div className='bar'>
-                            <Link><span>Amazon Advertising</span> <br />
+                            <a><span>Amazon Advertising</span> <br />
                                 Find, attract, and <br />
-                                engage customers</Link>
-                            <Link><span>Amazon Advertising</span> <br />
+                                engage customers</a>
+                            <a><span>Amazon Advertising</span> <br />
                                 Find, attract, and <br />
-                                engage customers</Link>
-                            <Link><span>Amazon Advertising</span> <br />
+                                engage customers</a>
+                            <a><span>Amazon Advertising</span> <br />
                                 Find, attract, and <br />
-                                engage customers</Link>
-                            <Link><span>Amazon Advertising</span> <br />
+                                engage customers</a>
+                            <a><span>Amazon Advertising</span> <br />
                                 Find, attract, and <br />
-                                engage customers</Link>
+                                engage customers</a>
                         </div>
                         <div className='bar'>
-                            <Link><span>Amazon Advertising</span> <br />
+                            <a><span>Amazon Advertising</span> <br />
                                 Find, attract, and <br />
-                                engage customers</Link>
-                            <Link><span>Amazon Advertising</span> <br />
+                                engage customers</a>
+                            <a><span>Amazon Advertising</span> <br />
                                 Find, attract, and <br />
-                                engage customers</Link>
-                            <Link><span>Amazon Advertising</span> <br />
+                                engage customers</a>
+                            <a><span>Amazon Advertising</span> <br />
                                 Find, attract, and <br />
-                                engage customers</Link>
-                            <Link><span>Amazon Advertising</span> <br />
+                                engage customers</a>
+                            <a><span>Amazon Advertising</span> <br />
                                 Find, attract, and <br />
-                                engage customers</Link>
+                                engage customers</a>
                         </div>
                         <div className='rights'>
                             <div className='top'>
-                                <Link>Interest-Based Ads</Link>
-                                <Link>privacy Notice</Link>
-                                <Link>Conditions Of Use & Sale</Link>
+                                <a>Interest-Based Ads</a>
+                                <a>privacy Notice</a>
+                                <a>Conditions Of Use & Sale</a>
                             </div>
 
-                            <Link>©1996–2025, Amazon.com, Inc. or its affiliates</Link>
+                            <a>©1996–2025, Amazon.com, Inc. or its affiliates</a>
 
                         </div>
                     </div>

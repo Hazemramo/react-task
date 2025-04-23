@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaArrowRight, FaHeadphonesAlt } from "react-icons/fa";
+import { FaHeadphonesAlt } from "react-icons/fa";
 import { FiTruck } from "react-icons/fi";
 import { LuDollarSign } from "react-icons/lu";
 import { CiPercent } from "react-icons/ci";
@@ -27,9 +27,9 @@ import './home.css'
 
 
 
-export const Home = ({ details, view, close, setclose, Addtocart }) => {
+export const Home = ({ details, view, close, setclose, Addtocart }: any) => {
 
-    const [homeproduct, sethomeproduct] = useState(Homeproduct)
+    const [homeproduct] = useState(Homeproduct)
 
 
     const settings = {
@@ -80,7 +80,7 @@ export const Home = ({ details, view, close, setclose, Addtocart }) => {
                         <div className="productbox">
                             <div className="content">
 
-                                {details.map((elm => {
+                                {details.map(((elm: any) => {
                                     return (
                                         <div className="box" key={elm.Id}>
                                             <div onClick={() => setclose(false)} className='cross'>
@@ -306,7 +306,7 @@ export const Home = ({ details, view, close, setclose, Addtocart }) => {
                                                         <IoCartOutline />
                                                     </li>
                                                     <li onClick={() => view(elm)}>
-                                                        <Link className='abs' > <FaRegEye /></Link>
+                                                        <a className='abs' > <FaRegEye /></a>
 
                                                     </li>
                                                     <li>

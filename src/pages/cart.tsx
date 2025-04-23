@@ -1,21 +1,18 @@
-import React from 'react'
-
-
 import { IoClose } from "react-icons/io5";
 
 import './cart.css'
 import { Link } from 'react-router-dom';
 
-export const Cart = ({ cartdetails, setcartdetails, }) => {
+export const Cart = ({ cartdetails, setcartdetails }: any) => {
 
 
-    const incqty = (elm) => {
-        const exist = cartdetails.find((x) => {
+    const incqty = (elm: any) => {
+        const exist = cartdetails.find((x: any) => {
             return x.Id === elm.Id
         })
 
 
-        setcartdetails(cartdetails.map((curntelm) => {
+        setcartdetails(cartdetails.map((curntelm: any) => {
 
             return curntelm.Id === elm.Id ? { ...exist, qty: elm.qty + 1 } : curntelm
         }))
@@ -26,24 +23,19 @@ export const Cart = ({ cartdetails, setcartdetails, }) => {
 
 
 
-    const decqty = (elm) => {
-        const exist = cartdetails.find((x) => {
+    const decqty = (elm: any) => {
+        const exist = cartdetails.find((x: any) => {
             return x.Id === elm.Id
         })
 
 
-        // setcartdetails(cartdetails.map((curnelm) => {
-        //     return curnelm.Id === elm.Id ? { ...curnelm, qty: elm.qty - 1 } : curnelm
-        // }))
-
-
         if (exist.qty < 2) {
-            setcartdetails(cartdetails.filter((x) => {
+            setcartdetails(cartdetails.filter((x: any) => {
                 return x.Id !== elm.Id
             }))
 
         } else {
-            setcartdetails(cartdetails.map((curnelm) => {
+            setcartdetails(cartdetails.map((curnelm: any) => {
                 return curnelm.Id === elm.Id ? { ...curnelm, qty: elm.qty - 1 } : curnelm
             }))
         }
@@ -57,15 +49,15 @@ export const Cart = ({ cartdetails, setcartdetails, }) => {
     // remove method
 
 
-    const remove = (product) => {
+    const remove = (product: any) => {
 
 
-        const exist = cartdetails.find((e) => {
+        const exist = cartdetails.find((e: any) => {
             return e.Id === product.Id
         })
 
         if (exist.qty > 0) {
-            setcartdetails(cartdetails.filter((x) => {
+            setcartdetails(cartdetails.filter((x: any) => {
                 return x.Id !== product.Id
             }))
 
@@ -79,10 +71,10 @@ export const Cart = ({ cartdetails, setcartdetails, }) => {
 
     // change input num
 
-    const qtychange = (e, elm) => {
+    const qtychange = (e: any, elm: any) => {
         const newQty = e.target.value;
 
-        setcartdetails(cartdetails.map((curnelm) => {
+        setcartdetails(cartdetails.map((curnelm: any) => {
             return curnelm.Id === elm.Id
                 ? { ...curnelm, qty: newQty }
                 : curnelm;
@@ -96,7 +88,7 @@ export const Cart = ({ cartdetails, setcartdetails, }) => {
     // total price 
 
 
-    const Totalprice = cartdetails.reduce((price, item) => price + item.Price * item.qty, 0)
+    const Totalprice = cartdetails.reduce((price: number, item: any) => price + item.Price * item.qty, 0)
 
     return (
         <>
@@ -127,7 +119,7 @@ export const Cart = ({ cartdetails, setcartdetails, }) => {
                         <div className="productbox">
                             <div className="content">
 
-                                {cartdetails.map((elm => {
+                                {cartdetails.map(((elm: any) => {
                                     return (
                                         <div className="box" key={elm.Id}>
                                             <div onClick={() => remove(elm)} className='cross'>
@@ -174,7 +166,7 @@ export const Cart = ({ cartdetails, setcartdetails, }) => {
 
                                 <button className='checked-btn' > Checked</button>
                                 <h2 className='total_price'> total price:   ${Totalprice} </h2>
-                                
+
 
                             </div>
 

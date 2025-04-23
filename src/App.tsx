@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Footer } from './footer';
@@ -20,16 +19,16 @@ const App = () => {
 
 
   const [close, setclose] = useState(false)
-  const [details, setdetails] = useState([])
-  const [cartdetails, setcartdetails] = useState([])
-  const [clickedProducts, setClickedProducts] = useState([]);
+  const [details, setdetails] = useState<any[]>([])
+  const [cartdetails, setcartdetails] = useState<any[]>([])
+  const [clickedProducts, setClickedProducts] = useState<any[]>([]);
 
 
 
 
 
   // showing product details fun
-  function view(product) {
+  function view(product: any) {
 
     // window.scrollTo({ top: 130, behavior: "smooth" })
     setdetails([{ ...product }])
@@ -43,7 +42,7 @@ const App = () => {
 
 
 
-  const Addtocart = (product) => {
+  const Addtocart = (product: any) => {
 
     const done = cartdetails.find((e) => {
       return e.Id === product.Id
@@ -75,7 +74,7 @@ const App = () => {
 
   const [product, setproduct] = useState(ProductDetails)
 
-  function searchbtn(searchvalue) {
+  function searchbtn(searchvalue: any) {
     const change = ProductDetails.filter((x) => {
       return x.Cat === searchvalue
     })
@@ -85,12 +84,12 @@ const App = () => {
 
 
 
- 
+
 
   return (
 
     <BrowserRouter>
-      <Nav  searchbtn={searchbtn} />
+      <Nav searchbtn={searchbtn} />
       <Rout product={product} setproduct={setproduct} details={details} view={view} setclose={setclose} close={close} cartdetails={cartdetails} setcartdetails={setcartdetails} Addtocart={Addtocart} clickedProducts={clickedProducts} />
       <Footer />
     </BrowserRouter>

@@ -1,29 +1,21 @@
-import React, { useState } from 'react'
 import ProductDetails from '../product-details'
-
-
-
-import { FaArrowRight, FaHeadphonesAlt } from "react-icons/fa";
-import { FiTruck } from "react-icons/fi";
-import { LuDollarSign } from "react-icons/lu";
-import { CiPercent } from "react-icons/ci";
 import { IoCartOutline, IoClose } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa6";
 import { FaRegEye } from "react-icons/fa";
 
 
+// css
 import './product.css'
-import { CgProductHunt } from 'react-icons/cg';
 
 
 
 
 
-export const Product = ({ clickedProducts, product, setproduct, details, view, close, setclose, Addtocart }) => {
+export const Product = ({ clickedProducts, product, setproduct, details, view, close, setclose, Addtocart }: any) => {
 
 
 
-  function Filtterproducts(product) {
+  function Filtterproducts(product: any) {
     const update = ProductDetails.filter((x) => {
       return x.Cat === product
     })
@@ -46,7 +38,7 @@ export const Product = ({ clickedProducts, product, setproduct, details, view, c
             <div className="productbox">
               <div className="content">
 
-                {details.map((elm => {
+                {details.map(((elm: any) => {
                   return (
                     <div className="box" key={elm.Id}>
                       <div onClick={() => setclose(false)} className='cross'>
@@ -96,7 +88,7 @@ export const Product = ({ clickedProducts, product, setproduct, details, view, c
             <div className="productbox">
               <div className="content">
 
-                {product.map((elm => {
+                {product.map(((elm: any) => {
                   return (
                     <div className="box" key={elm.Id}>
                       <div className="img-box">

@@ -14,16 +14,15 @@ import { useState } from 'react';
 
 // fun
 
-const Nav = ({ searchbtn }) => {
-  
-  
-  const [search, setsearch] = useState()
+const Nav = ({ searchbtn }: any) => {
+
+
+  const { loginWithRedirect,user, isAuthenticated, logout } = useAuth0();
+  const [search, setsearch] = useState('')
   const navigate = useNavigate();
-  
-  
-  const { loginWithRedirect, user, isAuthenticated, logout } = useAuth0();
-  
-  const handleKeyDown = (x) => {
+
+
+  const handleKeyDown = (x: any) => {
     if (x.key === 'Enter') {
       x.preventDefault(); // مهم علشان يمنع reload في بعض الحالات
       searchbtn(search);
@@ -62,7 +61,7 @@ const Nav = ({ searchbtn }) => {
                     <FaRegUser />
                   </div>
 
-                  <p>Hello, {user.name}</p>
+                  <p>Hello, {user?.name}</p>
 
                 </div>
               )
