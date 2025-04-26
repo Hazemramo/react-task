@@ -67,7 +67,7 @@ export const Footer = () => {
 
                             <div className="left-side">
 
-                                <img src="/src/assets/pngimg.com - amazon_PNG25.png" alt="" />
+                                <img src="/react-task/images/pngimg.com - amazon_PNG25.webp" alt="" />
                             </div>
 
                             <div className='right-side'>
@@ -83,7 +83,7 @@ export const Footer = () => {
                                 </div>
 
                                 <div className="country-selector">
-                                    <img src="https://flagcdn.com/w40/eg.png" alt="Egypt Flag" />
+                                    <img src="https://flagcdn.com/w40/eg.webp" alt="Egypt Flag" />
                                     <span>Egypt</span>
                                 </div>
 

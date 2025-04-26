@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Footer } from './footer';
 import ProductDetails from './product-details';
-// import { toast } from 'react-toastify';
 
 import Nav from './Nav';
 import Rout from './rout';

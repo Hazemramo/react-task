@@ -1,7 +1,7 @@
 import { IoClose } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 import './cart.css'
-import { Link } from 'react-router-dom';
 
 export const Cart = ({ cartdetails, setcartdetails }: any) => {
 

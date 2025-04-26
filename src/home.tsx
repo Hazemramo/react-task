@@ -113,10 +113,10 @@ export const Home = ({ details, view, close, setclose, Addtocart }: any) => {
                         <Link className='link' to='/product' >
 
                             <div className="img-box">
-                                <img src='/src/assets/banner_home2.png' alt="" />
+                                <img src='/react-task/images/banner_home2.webp' alt="" />
                             </div>
                             <div className="img-box">
-                                <img src='/src/assets/banner_home3.png' alt="" />
+                                <img src='/react-task/images/banner_home3.webp' alt="" />
                             </div>
                         </Link>
 
@@ -138,7 +138,7 @@ export const Home = ({ details, view, close, setclose, Addtocart }: any) => {
                     <div className="box">
                         <div className='abs-box'>25%</div>
                         <div className="img-box">
-                            <img src='/src/assets/product/10.png' alt="" />
+                            <img src='/react-task/images/product/10.webp' alt="" />
                         </div>
                         <div className="detail-box">
                             <p> <span>64</span> products</p>
@@ -146,7 +146,7 @@ export const Home = ({ details, view, close, setclose, Addtocart }: any) => {
                     </div>
                     <div className="box">
                         <div className="img-box">
-                            <img src='/src/assets/product/11.png' alt="" />
+                            <img src='/react-task/images/product/11.webp' alt="" />
                         </div>
                         <div className="detail-box">
                             <p><span>35</span> products</p>
@@ -154,7 +154,7 @@ export const Home = ({ details, view, close, setclose, Addtocart }: any) => {
                     </div>
                     <div className="box">
                         <div className="img-box">
-                            <img src='/src/assets/product/14.png' alt="" />
+                            <img src='/react-task/images/product/14.webp' alt="" />
                         </div>
                         <div className="detail-box">
                             <p><span>20</span> products</p>
@@ -164,7 +164,7 @@ export const Home = ({ details, view, close, setclose, Addtocart }: any) => {
                         <div className='abs-box'>50%</div>
 
                         <div className="img-box">
-                            <img src='/src/assets/product/12.png' alt="" />
+                            <img src='/react-task/images/product/12.webp' alt="" />
                         </div>
                         <div className="detail-box">
                             <p><span>43</span> products</p>
@@ -172,7 +172,7 @@ export const Home = ({ details, view, close, setclose, Addtocart }: any) => {
                     </div>
                     <div className="box">
                         <div className="img-box">
-                            <img src='/src/assets/product/13.png' alt="" />
+                            <img src='/react-task/images/product/13.webp' alt="" />
                         </div>
                         <div className="detail-box">
                             <p><span>23</span> products</p>

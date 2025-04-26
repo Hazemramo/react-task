@@ -4,8 +4,6 @@ import { CiLogout, CiLogin } from "react-icons/ci";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Link, useNavigate } from 'react-router-dom';
-import logonav from './assets/trojan-battery-company-seeklogo.png';
-
 import './Nav.css'
 import { useState } from 'react';
 
@@ -17,7 +15,7 @@ import { useState } from 'react';
 const Nav = ({ searchbtn }: any) => {
 
 
-  const { loginWithRedirect,user, isAuthenticated, logout } = useAuth0();
+  const { loginWithRedirect, user, isAuthenticated, logout } = useAuth0();
   const [search, setsearch] = useState('')
   const navigate = useNavigate();
 
@@ -41,7 +39,7 @@ const Nav = ({ searchbtn }: any) => {
       <div className="main-header">
         <div className="cntainer">
           <div className="logo-nav">
-            <img src={logonav} alt="logo" />
+            <img src="/react-task/images/trojan-battery-company-seeklogo.webp" alt="logo" />
           </div>
 
           <div className="search-input">
@@ -85,7 +83,7 @@ const Nav = ({ searchbtn }: any) => {
             <div className='lang-sec'>
               <h3>EN</h3>
               <div className='flag-out'>
-                <img className='flag-sec' src="/src/assets/Flag_of_the_United_States.svg.png" alt="" />
+                <img className='flag-sec' src="/react-task/images/Flag_of_the_United_States.svg.webp" alt="" />
               </div>
             </div>
             <ul>
